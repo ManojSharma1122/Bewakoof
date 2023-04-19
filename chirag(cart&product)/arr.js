@@ -3,7 +3,7 @@ var total_item = [
 
     //MAN OVERSIZED FIT SECTION STARTS--
     img:"https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Purple Beast Within Graphic Printed Oversized0 T-shirt",
     rating: 4.2,
     price: 699,
@@ -54,7 +54,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t640/men-s-purple-cyber-samurai-graphic-printed-oversized-t-shirt-589387-1681725657-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Purple Cyber Samurai Graphic Printed Oversized T-shirt",
     rating: 4.2,
     price: 699,
@@ -139,7 +139,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-white-karma-circles-typography-oversized-t-shirt-489752-1681218931-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's White Karma Circles Typography Oversized T-shirt",
     rating: 4.1,
     price: 754,
@@ -156,7 +156,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-blue-peace-not-war-graphic-printed-oversized-t-shirt-479634-1667556897-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Blue Peace Not War Graphic Printed Oversized T-shirt",
     rating: 4.1,
     price: 566,
@@ -173,7 +173,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-warriors-graphic-printed-oversized-t-shirt-519149-1679048409-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Black Warriors Graphic Printed Oversized T-shirt",
     rating: 4.4,
     price: 599,
@@ -190,7 +190,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-blue-oversized-fit-t-shirt-439435-1681218476-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Blue Oversized Fit T-shirt",
     rating: 4.4,
     price: 499,
@@ -207,7 +207,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-blue-oversized-fit-t-shirt-439435-1681218476-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Blue Oversized Fit T-shirt",
     rating: 4.4,
     price: 499,
@@ -224,7 +224,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-bright-white-color-block-oversized-t-shirt-509375-1667977333-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's White & Blue Color Block Oversized T-shirt",
     rating: 4.4,
     price: 479,
@@ -241,7 +241,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-empire-yellow-oversized-t-shirt-492722-1667556087-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Empire Yellow Oversized T-shirt",
     rating: 4.4,
     price: 392,
@@ -326,7 +326,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-varsity-green-college-dropout-typography-oversized-t-shirt-512520-1667497051-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Varsity Green College Dropout Typography Oversized T-shirt",
     rating: 4.4,
     price: 584,
@@ -343,7 +343,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-snorkel-blue-color-block-oversized-hoodie-t-shirt-509388-1669723124-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Blue & Pink Color Block Oversized Hoodie T-shirt",
     rating: 4.7,
     price: 584,
@@ -360,7 +360,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-gray-flannel-eva01-printed-t-shirt-542572-1672842845-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Grey EVA01 Graphic Printed Oversized T-shirt",
     rating: 4.6,
     price: 518,
@@ -377,7 +377,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-the-ghost-graphic-printed-oversized-t-shirt-503830-1681218572-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
     rating: 4.6,
     price: 614,
@@ -394,7 +394,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-red-striped-oversized-t-shirt-544716-1670995812-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Black & Red Striped Oversized T-shirt",
     rating: 4.6,
     price: 668,
@@ -411,7 +411,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-oversized-t-shirt-439421-1679048737-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Black Oversized T-shirt",
     rating: 4.6,
     price: 648,
@@ -445,7 +445,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-green-white-striped-oversized-t-shirt-516667-1673444594-1.jpg",
-    merchandise:"BEWAKOOF",
+    merchandise:"Bewakoof®",
     name: "Men's Green & White Striped Oversized T-shirt",
     rating: 4.2,
     price: 539,
@@ -462,7 +462,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-universal-astro-graphic-printed-oversized-t-shirt-516917-1679048996-1.jpg",
-    merchandise:"BEWAKOOF",
+    merchandise:"Bewakoof®",
     name: "Men's Black Universal Astro Graphic Printed Oversized T-shirt",
     rating: 4.2,
     price: 799,
@@ -479,7 +479,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-scribble-aop-oversized-t-shirt-516662-1674553389-1.jpg",
-    merchandise:"BEWAKOOF",
+    merchandise:"Bewakoof®",
     name: "Men's Black Scribble AOP Oversized T-shirt",
     rating: 4.2,
     price: 547,
@@ -496,7 +496,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-grey-graphic-printed-oversized-t-shirt-507999-1672743406-1.jpg",
-    merchandise:"BEWAKOOF",
+    merchandise:"Bewakoof®",
     name: "Men's Black Scribble AOP Oversized T-shirt",
     rating: 4.2,
     price: 539,
@@ -547,7 +547,7 @@ var total_item = [
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-witcher-of-rivia-graphic-printed-oversized-t-shirt-519192-1667519467-1.jpg",
-    merchandise:"Bewakoof",
+    merchandise:"Bewakoof®",
     name: "Men's Black Witcher of Rivia Graphic Printed Oversized T-shirt",
     rating: 4.2,
     price: 649,
@@ -2915,5 +2915,7 @@ var total_item = [
     buy3at999: false,
   },
 ];
+
+total_item[77].img="https://images.bewakoof.com/t1080/women-s-black-slim-fit-t-shirt-232388-1665664326-1.jpg";
 
 
