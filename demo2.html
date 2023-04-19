@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+input {
+  display: inline-block;
+  vertical-align: right;
+ 
+  width: 1300px;
+  margin-left: -100px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+
+    <form>
+        <label>
+          <img src="paytmlog.png">
+          <span>Paytm Wallet</span>
+          <input type="radio" name="payment" value="paytm" id="paytm">
+          
+        </label>
+        <hr>
+        <label>
+          <img src="phonepe.png">
+          <span>PhonePe</span>
+          <input type="radio" name="payment" value="phonepe" id="phonepe">
+          
+        </label>
+        <hr >
+        <label>
+          <img src="mobi.png">
+          <span>Mobikwik</span>
+          <input type="radio" name="payment" value="mobikwik" id="mobikwik">
+          
+        </label>
+        <label>
+          <img src="freecharge.png">
+          <span>Freecharge</span>
+          <input type="radio" name="payment" value="freecharge" id="freecharge">
+          
+        </label>
+      </form>
+      
+
+
+</body>
+</html>

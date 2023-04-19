@@ -1,6 +1,7 @@
 #host {
     margin-left: 200px;
     
+    
 }
 
 #parent {
@@ -72,6 +73,7 @@ label {
 .tabs-container .content-container .content {
     display: none;
     padding: 32px;
+    margin-top: -30px;
 }
 
 .tabs-container .content-container .content.active {
@@ -98,3 +100,43 @@ input {
 input[type="radio"] {
     display: block;
 }
+
+
+#rinput {
+    display: inline-block;
+    vertical-align: right;
+   margin-left: 50px;
+   width: 500px;
+ 
+    
+}
+
+span {
+    display: inline-block;
+    width: 100px; /* adjust as per your requirement */
+    text-align: left;
+    font-size: 16px; /* adjust as per your requirement */
+    vertical-align: middle;
+    /*margin-left: 20px;*/
+}
+#img2 {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+  
+}
+
+#lbl {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+  }
+  
+
+
+
+
+  
