@@ -144,24 +144,144 @@ paymentBnplButton.addEventListener("click",()=>{
     document.getElementById("payment-bnpl").style.display = "block";
 })
 
-document.getElementById("card-pay-now-button").addEventListener("click", function () {
-
-    var person = prompt("Please enter your OTP", "");
-    if (person == "1234") {
-        alert("We are processing your payment !");
-        window.location.href = "paymentsuccess.html";
-    }
-    else {
-        alert("Wrong OTP, Try Again");
-    }
-    
-});
+ 
 document.getElementById("paynow-button").addEventListener("click", function () {
-    window.location.href = "paymentsuccess.html";
+    window.location.href = "paymentsuccessful.html";
 });
 
 document.getElementById("verify-button").addEventListener("click", function () {
-    window.location.href = "paymentsuccess.html";
+    window.location.href = "paymentsuccessful.html";
 });
 
 
+
+  document.getElementById("card-pay-now-button").addEventListener("click", function (e) {
+    inputvalidate();
+    var cardNumberInput = document.getElementById("card-number");
+    var cardExpiryInput = document.getElementById("card-expiry");
+    var cardCVVInput = document.getElementById("card-password");
+    var cardNameInput = document.getElementById("card-name");
+
+
+
+  
+    if (cardNumberInput.value === '') {
+      alert("Please enter the card number");
+      return;
+    }
+  
+    if (cardExpiryInput.value === '') {
+      alert("Please enter the card expiry date");
+      return;
+    }
+  
+    if (cardCVVInput.value === '') {
+      alert("Please enter the card CVV number");
+      return;
+    }
+  
+    if (cardNameInput.value === '') {
+      alert("Please enter the name on the card");
+      return;
+    }
+  
+    var person = prompt("Please enter your OTP", "");
+  
+    if (person == "1234") {
+      alert("We are processing your payment !");
+      window.location.href = "paymentsuccessful.html";
+    } else {
+      alert("Wrong OTP, Try Again");
+    }
+  });
+
+
+      
+//validation code for  debit card 16 digit  code 
+
+function inputvalidate() 
+{
+
+        const debitCardInput = document.getElementById('card-number');
+        const debitExpInput = document.getElementById('card-expiry');
+        const cvvInput = document.getElementById('card-password');
+
+
+
+        cvvInput.addEventListener('input', function(e) {
+
+            // Remove all non-numeric characters from input
+            const cleanedInput = e.target.value.replace(/\D/g, '');
+          
+            // Limit input to 3 digits
+            const limitedInput = cleanedInput.slice(0, 3);
+          
+            // Update the input value with the limited input
+            e.target.value = limitedInput;
+
+            cardCVVInput = limitedInput;
+          });
+
+
+
+
+        debitExpInput.addEventListener('input', function(e) {
+
+            // Remove all non-numeric characters from input
+            const cleanedInput = e.target.value.replace(/\D/g, '');
+          
+            // Limit input to 4 digits
+            const limitedInput = cleanedInput.slice(0, 4);
+          
+            // Format the input with a slash between the 2nd and 3rd digits
+            const formattedInputep = limitedInput.replace(/(\d{2})(\d{0,2})/, '$1/$2').trim();
+          
+            // Update the input value with the formatted input
+            e.target.value = formattedInputep;
+
+            cardExpiryInput = formattedInputep;
+          });
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+      debitCardInput.addEventListener('input', function(e) 
+      {
+
+     
+      //const cleanedInput1 = e.target.value.replace(/[^0-9]/g, '');
+            const cleanedInput = e.target.value.replace(/\D/g, '');
+
+            const limitedInput = cleanedInput.slice(0, 16);
+
+        
+            const formattedInput = limitedInput.replace(/(.{4})/g, '$1 ');
+
+        
+            const trimmedInput = formattedInput.trim();
+
+            
+            e.target.value = trimmedInput;
+
+            cardNameInput = trimmedInput;
+      });
+
+}
+
+//validation code for Expire Date 
+
+function expireValidation() {
+
+}
+      
+  

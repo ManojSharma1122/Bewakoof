@@ -72,10 +72,10 @@
           <img src="https://images.bewakoof.com/web/ic-rupay-payment-v1.jpg" alt="">
           <img src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="">
         </div>
-        <input type="text" id="card-number" placeholder="Card Number" />
-        <input type="text" id="card-expiry" placeholder="Expiry (MM/YY)" />
-        <input type="password" id="card-password" placeholder="CVV" />
-        <input type="text" id="card-name" placeholder="Name on Card" />
+        <input  required  type="text" id="card-number"  pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" inputmode="numeric" placeholder="Card Number"  />
+        <input type="text" id="card-expiry" placeholder="Expiry (MM/YY)" required />
+        <input type="password" id="card-password" placeholder="CVV" required />
+        <input type="text" id="card-name" placeholder="Name on Card" required />
         <div id="card-payment-div2">
           <!-- <input type="checkbox" id="card-checkbox" />
           <label id="card-payment-para1">Save card details for later</label>-->
@@ -87,6 +87,7 @@
         <button id="card-pay-now-button">PAY NOW</button>
       </div>
       <div id="payment-wallet">
+        
         <div>
           <img src="https://images.bewakoof.com/web/paytm-1556185965.png" alt="">
           <p>Paytm</p>
@@ -112,6 +113,7 @@
           <p>Freecharge</p>
           <input type="radio">
         </div>
+        
       </div>
       <div id="payment-upi">
         <div>
@@ -121,7 +123,7 @@
           <img src="https://images.bewakoof.com/web/ic-more-option-payment-v1.jpg" alt="">
           <input type="radio">
         </div>
-        <input type="text" placeholder="UPI ID">
+        <input type="text" placeholder="UPI ID" required>
         <p>UPI ID is in the format of 9999932832@bank or username@bank</p>
         <div>
 
