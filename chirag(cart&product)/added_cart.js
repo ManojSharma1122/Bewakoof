@@ -30,11 +30,11 @@ var getarr = JSON.parse(localStorage.getItem("added"))||[];
         return acc + curr.price;
     },0)
     var t = document.getElementById("total")
-            t.textContent = "TOTAL PRICE==>"+"   "+total;
+            t.textContent = "Total"+"   "+total;
 
         var item = document.createElement("h1")
-        item.textContent = "NO.of items:-  "+getarr.length
-        document.getElementById("items").append(item)
+        item.textContent = getarr.length
+        document.getElementById("item_count").append(item)
 
 
 
