@@ -1,5 +1,12 @@
 var getarr = JSON.parse(localStorage.getItem("added"))||[];
+if(getarr.length>0)
+{
     display()
+}
+else{
+   
+}
+    
    
     function display(){
         getarr.map(function(ele)

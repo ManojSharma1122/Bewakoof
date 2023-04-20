@@ -3013,7 +3013,7 @@ function filterbycolor()
   {
     filterarr = total_item.filter(function(ele)
     {
-      return ele.color==filterby;
+      return ele.color.includes(filterby);
     })
   }
   display(filterarr)
@@ -3091,13 +3091,17 @@ function filterbyfit()
   {
     filterarr = total_item.filter(function(ele)
     {
-      return ele.fit_design==filterby;
+      return ele.fit_design.includes(filterby);
     })
   }
   display(filterarr)
 }
 
-
+document.getElementById("clear").addEventListener("click",reload)
+function reload()
+{
+  window.location.reload()
+}
 
    
   
@@ -3137,13 +3141,13 @@ function filterbyfit()
             var p = document.createElement("p")
             p.setAttribute("id", "tribe_off")
 
-            var button = document.createElement("button")
-            button.textContent = "Add to Cart"
-            button.addEventListener("click", function () {
-                addtocart(ele)
-            })
+            // var button = document.createElement("button")
+            // button.textContent = "Add to Cart"
+            // button.addEventListener("click", function () {
+            //     addtocart(ele)
+            // })
 
-            discribe.append(merchandise, name, price," ", mrp," ", tribe_off, button);
+            discribe.append(merchandise, name, price, mrp, tribe_off);
             div.append(img, discribe);
 
             document.getElementById("parent").append(div);

@@ -2917,3 +2917,4 @@ var total_item = [
 ];
 
 total_item[77].img="https://images.bewakoof.com/t1080/women-s-black-slim-fit-t-shirt-232388-1665664326-1.jpg";
+
