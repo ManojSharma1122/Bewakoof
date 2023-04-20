@@ -1,4 +1,4 @@
-var total_item = [
+ var total_item = [
   {
 
     //MAN OVERSIZED FIT SECTION STARTS--
@@ -16,7 +16,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t640/men-s-blue-bones-graphic-printed-oversized-t-shirt-589386-1681726048-1.jpg",
@@ -118,7 +118,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-fly-me-to-the-moon-graphic-printed-oversized-t-shirt-505572-1667492228-1.jpg",
@@ -220,7 +220,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-bright-white-color-block-oversized-t-shirt-509375-1667977333-1.jpg",
@@ -322,7 +322,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-varsity-green-college-dropout-typography-oversized-t-shirt-512520-1667497051-1.jpg",
@@ -407,7 +407,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-oversized-t-shirt-439421-1679048737-1.jpg",
@@ -475,7 +475,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-scribble-aop-oversized-t-shirt-516662-1674553389-1.jpg",
@@ -662,7 +662,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-white-printed-t-shirt-548177-1679924534-1.jpg",
@@ -886,7 +886,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: true,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-sunset-block-graphic-printed-plus-size-t-shirt-589267-1681391917-1.jpg",
@@ -1005,7 +1005,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: false,
     newarrive: true,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/women-s-pink-best-buds-graphic-printed-oversized-t-shirt-589379-1681725219-1.jpg",
@@ -1260,7 +1260,7 @@ var total_item = [
     category: "BOXERS",
     bestseller: false,
     newarrive: true,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-all-over-printed-boxer-combo-pack-of-3-589501-1681479413-1.jpg",
@@ -1573,7 +1573,7 @@ var total_item = [
     category: " T-shirt",
     bestseller: true,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/women-s-white-dragons-are-real-graphic-printed-oversized-t-shirt-1-570776-1673961364-1.jpg",
@@ -1794,7 +1794,7 @@ var total_item = [
     category: "Trousers",
     bestseller: true,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/women-s-black-love-peace-happiness-graphic-printed-t-shirt-509689-1656058758-1.jpg",
@@ -1913,7 +1913,7 @@ var total_item = [
     category: "T-shirt",
     bestseller: true,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/women-s-green-typographic-t-shirt-588962-1681379860-1.jpg",
@@ -2034,7 +2034,7 @@ var total_item = [
     category: "Joggers",
     bestseller: true,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
 {
     img:"https://images.bewakoof.com/t1080/men-s-black-logo-b-boy-printed-oversize-fit-joggers-554330-1670480234-1.jpg",
@@ -2206,7 +2206,7 @@ var total_item = [
     category: "joggers",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-deep-depth-logo-b-boy-printed-oversize-fit-joggers-554329-1670480196-1.jpg",
@@ -2257,7 +2257,7 @@ var total_item = [
     category: "joggers",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-purple-joggers-451591-1656156783-1.jpg",
@@ -2359,7 +2359,7 @@ var total_item = [
     category: "joggers",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   //vest for men--
   {
@@ -2411,7 +2411,7 @@ var total_item = [
     category: "Vest",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   //full slevees tshits men--
   {
@@ -2429,7 +2429,7 @@ var total_item = [
     category: "Full Sleeve T-Shirts",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-green-the-man-of-steel-graphic-printed-oversized-t-shirt-589395-1681725064-1.jpg",
@@ -2533,7 +2533,7 @@ var total_item = [
     category: "Jeans",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/women-s-blue-loose-comfort-fit-jeans-585080-1679660688-1.jpg",
@@ -2636,7 +2636,7 @@ var total_item = [
     category: "T-Shirt",
     bestseller: true,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-black-mickey-trio-call-dl-regular-fit-t-shirt-567871-1675689187-1.jpg",
@@ -2738,7 +2738,7 @@ var total_item = [
     category: "T-Shirt",
     bestseller: false,
     newarrive: true,
-    buy3at999: true,
+    buy3at999: false,
   },
   //JACKET
   {
@@ -2843,7 +2843,7 @@ var total_item = [
     category: "shirt",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
   {
     img:"https://images.bewakoof.com/t1080/men-s-linen-color-block-half-sleeves-shirt-362763-1656176753-1.jpg",
@@ -2912,8 +2912,250 @@ var total_item = [
     category: "pants",
     bestseller: false,
     newarrive: false,
-    buy3at999: true,
+    buy3at999: false,
   },
 ];
 
 total_item[77].img="https://images.bewakoof.com/t1080/women-s-black-slim-fit-t-shirt-232388-1665664326-1.jpg";
+display(total_item)
+
+// FILTER BY GENDER
+function filterbygender()
+{
+  var filterby = document.getElementById("gender").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.gender==filterby;
+    })
+  }
+  display(filterarr)
+}
+
+//SORT BY PRICE
+function sortbyprice()
+{
+  var dummy = total_item;
+
+  dummy.sort(function(a,b)
+  {
+    if(document.getElementById("price").value=="high")
+    {
+      return b.price-a.price;
+    }
+    else{
+      return a.price-b.price;
+    }
+   
+  })
+  display(dummy)
+}
+
+
+
+
+//FILTER BY CATEGORIES
+function filterbycategories()
+{
+  var filterby = document.getElementById("getit").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.category==filterby;
+    })
+  }
+  display(filterarr)
+}
+
+
+//FILTER BY MERCHANT
+function filterbymerchant()
+{
+  var filterby = document.getElementById("getmerchatnt").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.merchandise==filterby;
+    })
+  }
+  display(filterarr)
+}
+
+
+//FILTER BY COLOR
+function filterbycolor()
+{
+  var filterby = document.getElementById("color").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.color==filterby;
+    })
+  }
+  display(filterarr)
+}
+
+// FILTER BY BESTSELLER
+function filterbybestseller()
+{
+  var filterby = document.getElementById("bestseller").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.bestseller==true;
+    })
+  }
+  display(filterarr)
+}
+
+
+// FILTER BY NEWARRIVAL
+function filterbynewarrival()
+{
+  var filterby = document.getElementById("newarrive").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.newarrive==true;
+    })
+  }
+  display(filterarr)
+}
+
+// FILTER BY BUY3OFFER
+function filterbyoffer()
+{
+  var filterby = document.getElementById("offer").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.buy3at999==true;
+    })
+  }
+  display(filterarr)
+}
+
+
+// FILTER BY FIT
+function filterbyfit()
+{
+  var filterby = document.getElementById("fit").value
+  var filterarr;
+  if(filterby=="all")
+  {
+    filterarr=total_item
+  }
+  else
+  {
+    filterarr = total_item.filter(function(ele)
+    {
+      return ele.fit_design==filterby;
+    })
+  }
+  display(filterarr)
+}
+
+
+
+   
+  
+    function display(total_item) {
+        document.getElementById("parent").textContent = ""
+        total_item.map(function (ele, index) {
+
+
+            var div = document.createElement("div")
+            div.setAttribute("id", "mix_div")
+
+            var img = document.createElement("img")
+            img.setAttribute("src", ele.img)
+            img.setAttribute("id", "pro_img")
+
+
+            var discribe = document.createElement("div");
+            discribe.setAttribute("id", "discribe")
+
+            var merchandise = ele.merchandise;
+            var p = document.createElement("p")
+            p.setAttribute("id", "brand")
+
+            var name = ele.name
+            var p = document.createElement("p")
+            p.setAttribute("id", "name")
+
+            var price = ele.price
+            var p = document.createElement("p")
+            p.setAttribute("id", "price")
+
+            var mrp = ele.mrp;
+            var p = document.createElement("p")
+            p.setAttribute("id", "mrp")
+
+            var tribe_off = price - 50;
+            var p = document.createElement("p")
+            p.setAttribute("id", "tribe_off")
+
+            var button = document.createElement("button")
+            button.textContent = "Add to Cart"
+            button.addEventListener("click", function () {
+                addtocart(ele)
+            })
+
+            discribe.append(merchandise, name, price," ", mrp," ", tribe_off, button);
+            div.append(img, discribe);
+
+            document.getElementById("parent").append(div);
+
+        })
+
+    }
+
+
+    //console.log(arr)
+    var added = JSON.parse(localStorage.getItem("array")) || [];
+    function addtocart(i) {
+        added.push(i)
+        localStorage.setItem("array", JSON.stringify(added))
+    }

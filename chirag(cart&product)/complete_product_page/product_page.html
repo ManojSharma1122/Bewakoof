@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2624744cdd.js" crossorigin="anonymous"></script>
+    <style>
+        /* body {
+            width: auto;
+            height: auto;
+        }
+
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+        }
+
+        #img_div {
+            width: auto;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        #pro_img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+
+        #discribe {
+            background-color: #823232;
+            width: 100%;
+            height: 20%;
+        } */
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            row-gap: 80px;
+
+        }
+
+        #discribe {
+            display: grid;
+            grid-row: auto;
+            gap: 15px;
+
+        }
+
+        button {
+            width: 20%;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="filter">
+    <!-- FILTER  BY  CATEGORIES -->
+    <select name="" id="getit" onchange="filterbycategories()">
+      <option value="all">category</option>
+      <option value="T-shirt">T-shirt</option>
+      <option value="Joggers">Joggers</option>
+      <option value="DRESS">DRESS</option>
+      <option value="BOXERS">BOXERS</option>
+      <option value="PYJAMAS">PYJAMAS</option>
+      <option value="jacket">jacket</option>
+      <option value="Shorts">Shorts</option>
+      <option value="Long Kurta">Long Kurta</option>
+      <option value="Track Pants">Track Pants</option>
+      <option value="Trousers">Trousers</option>
+      <option value="Vest">Vest</option>
+      <option value="Full Sleeve T-Shirts">Full Sleeve T-Shirts</option>
+      <option value="Top">Top</option>
+      <option value="Jeans">Jeans</option>
+      <option value="Kurta">Kurta</option>
+      <option value="shirt">shirt</option>
+      <option value="pants">pants</option>
+    </select>
+
+
+    <!-- FILTER  BY  GENDER -->
+    <select name="" id="gender" onchange="filterbygender()">
+      <option value="all">select gender</option>
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select>
+
+    <!-- FILTER  BY  MERCHANT/BRAND -->
+    <select name="" id="getmerchatnt" onchange="filterbymerchant()">
+      <option value="all">BRAND</option>
+      <option value="Bewakoof®">Bewakoof®</option>
+      <option value="OFFICIAL DC COMICS MERCHANDISE">OFFICIAL DC COMICS MERCHANDISE</option>
+      <option value="OFFICIAL NASA MERCHANDISE">OFFICIAL NASA MERCHANDISE</option>
+      <option value="OFFICIAL DISNEY MERCHANDISE">OFFICIAL DISNEY MERCHANDISE</option>
+      <option value="BEWAKOOF X STREETWEAR">BEWAKOOF X STREETWEAR</option>
+      <option value="OFFICIAL MARVEL MERCHANDISE">OFFICIAL MARVEL MERCHANDISE</option>
+      <option value="OFFICIAL MINIONS MERCHANDISE">OFFICIAL MINIONS MERCHANDISE</option>
+      <option value="OFFICIAL PEANUTS MERCHANDISE">OFFICIAL PEANUTS MERCHANDISE</option>
+      <option value="The bargain street">The bargain street</option>
+      <option value="TEESHUT">TEESHUT</option>
+      <option value="OFFICIAL THE OFFICE MERCHANDISE">OFFICIAL THE OFFICE MERCHANDISE</option>
+      <option value="OFFICIAL GARFIELD MERCHANDISE">OFFICIAL GARFIELD MERCHANDISE</option>
+      <option value="OFFICIAL GAME OF THRONES MERCHANDISE">OFFICIAL GAME OF THRONES MERCHANDISE</option>
+      <option value="Botnia">Botnia</option>
+      <option value="Weezy">Weezy</option>
+      <option value="Door 74">Door 74</option>
+      <option value="Campus Sutra">Campus Sutra</option>
+      <option value="Vastrado">Vastrado</option>
+      <option value="Aks">Aks</option>
+      <option value="Dillinger">Dillinger</option>
+      <option value="Clovia">Clovia</option>
+      <option value="Lounge Dreams">Lounge Dreams</option>
+      <option value="Kotty">Kotty</option>
+      <option value="Mad Over Print">Mad Over Print</option>
+      <option value="Zheia">Zheia</option>
+      <option value="Freakins">Freakins</option>
+      <option value="THE DRY STATE">THE DRY STATE</option>
+      <option value="Difference of Opinion">Difference of Opinion</option>
+      <option value="Belliskey">Belliskey</option>
+      <option value="PLAY BY BEWAKOOF">PLAY BY BEWAKOOF</option>
+      <option value="Hubberholme">Hubberholme</option>
+      <option value="Chkokko">Chkokko</option>
+      <option value="Breakbounce">Breakbounce</option>
+      <option value="ANGEL FAB">ANGEL FAB</option>
+    </select>
+
+    <!-- FILTER BY COLOR -->
+    <select name="" id="color" onchange="filterbycolor()">
+      <option value="purple">purple</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="white">white</option>
+      <option value="black">black</option>
+      <option value="yellow">yellow</option>
+      <option value="grey">grey</option>
+      <option value="red">red</option>
+      <option value="pink">pink</option>
+      <option value="orange">orange</option>
+      <option value="brown">brown</option>
+      <option value="maroon">maroon</option>
+      <option value="navy">navy</option>
+      <option value="olive">olive</option>
+      <option value="mustard">mustard</option>
+    </select>
+
+    <!-- FILTER BY BESTSELLER -->
+    <select name="" id="bestseller" onchange="filterbybestseller()">
+    <option value="all">show by</option>
+    <option value="bestseller">bestseller</option>
+    </select>
+
+    <!-- FILTER BY offer -->
+    <select name="" id="offer" onchange="filterbyoffer()">
+    <option value="all">show by</option>
+    <option value="buy3at999">buy3at999</option>
+    </select>
+
+    <!-- FILTER BY NEWARRIVE -->
+    <select name="" id="newarrive" onchange="filterbynewarrival()">
+    <option value="all">show by</option>
+    <option value="newarrive">newarrive</option>
+    </select>
+
+
+    <!-- SORT BY PRICE -->
+    <select name="" id="price" onchange="sortbyprice()">
+    <option value="all">show by</option>
+    <option value="high">high to low</option>
+    <option value="low">low to high</option>
+    </select>
+
+
+    <!-- FILTER BY FIT -->
+    <select name="" id="fit" onchange="filterbyfit()">
+    <option value="all">show by</option>
+    <option value="OVERSIZED FIT">OVERSIZED0 FIT</option>
+    <option value="DESIGN OF THE WEEK">DESIGN OF THE WEEK</option>
+    <option value="100% COTTON">100% COTTON</option>
+    <option value="DIGITAL PRINT">DIGITAL PRINT</option>
+    <option value="BOYFRIEND FIT">BOYFRIEND FIT</option>
+    <option value="SLIM FIT">SLIM FIT</option>
+    <option value="PLUS SIZE">PLUS SIZE</option>
+    <option value="PREMIUM TERRY COTTON">PREMIUM TERRY COTTON</option>
+    <option value="REGULAR FIT">REGULAR FIT</option>
+    <option value="WIDE LEG FIT">WIDE LEG FIT</option>
+    <option value="RELAXED FIT">RELAXED FIT</option>
+    </select>
+    <div id="parent">
+    </div>
+</body>
+<script src="complete_product_page.js"></script>
+</html>
