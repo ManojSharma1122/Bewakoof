@@ -5,9 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ 
+    
+  
+  
+
+
   <title>Payment</title>
   <link rel="stylesheet" href="./payment1.css" />
-  <link rel="stylesheet" href="./style/spinner.css" />
+ 
 </head>
 
 <body>
@@ -17,7 +24,7 @@
     </div>
     <div>
       <p>Signed as</p>
-      <p id="payment-navbar-email">chaitanyakhairnar7@gmail.com</p>
+      <span id="payment-navbar-email">chaitanyakhairnar7@gmail.com</span>
     </div>
   </div>
   <hr />
@@ -32,8 +39,8 @@
           <img src="https://images.bewakoof.com/web/bank-card-fill-1645697857.svg" alt="">
           <P>DEBIT/CREDIT CARD</P>
         </div>
-         </button>
-      <button id="payment-wallet-button">
+      </button>
+      <!--<button id="payment-wallet-button">
         <div>
           <img src="https://images.bewakoof.com/web/Group-1645705428.png" alt="">
           <p> WALLET</p>
@@ -56,7 +63,7 @@
           <img src="https://images.bewakoof.com/web/cod-icon-1645705427.png" alt="">
           <p>CASH ON DELIVERY</p>
         </div>
-         </button>
+         </button>-->
       <button id="payment-bnpl-button">
         <div>
           <!--<img src="https://images.bewakoof.com/web/BNPL-icon-1645705427.png" alt="">
@@ -73,7 +80,7 @@
           <img src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="">
         </div>
         <input  required  type="text" id="card-number"  pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" inputmode="numeric" placeholder="Card Number"  />
-        <input type="text" id="card-expiry" placeholder="Expiry (MM/YY)" required />
+        <input type="month" id="card-expiry" placeholder="Expiry (MM/YY)" required />
         <input type="password" id="card-password" placeholder="CVV" required />
         <input type="text" id="card-name" placeholder="Name on Card" required />
         <div id="card-payment-div2">
@@ -88,7 +95,7 @@
       </div>
       <div id="payment-wallet">
         
-        <div>
+        <!--<div>
           <img src="https://images.bewakoof.com/web/paytm-1556185965.png" alt="">
           <p>Paytm</p>
           <input type="radio">
@@ -99,9 +106,9 @@
           <input type="radio">
         </div>
         <div>
-          <!--<img src="https://images.bewakoof.com/web/amazonpay-icon-1600094438.png" alt="">
+          <img src="https://images.bewakoof.com/web/amazonpay-icon-1600094438.png" alt="">
           <p>Amazon Pay</p>
-          <input type="radio">-->
+          <input type="radio">
         </div>
         <div>
           <img src="https://images.bewakoof.com/web/mobikwik-1556185968.png" alt="">
@@ -112,11 +119,11 @@
           <img src="https://images.bewakoof.com/web/bitmap-copy.jpg" alt="">
           <p>Freecharge</p>
           <input type="radio">
-        </div>
+        </div>-->
         
       </div>
       <div id="payment-upi">
-        <div>
+        <!--<div>
           <img src="https://images.bewakoof.com/web/upi-logo.png" alt="">
           <img src="https://images.bewakoof.com/web/ic-gpay-payment-gray-v1.jpg" alt="">
           <img src="https://images.bewakoof.com/web/ic-phone-pe-gray-payment-v1.jpg" alt="">
@@ -132,10 +139,10 @@
 
 
         </div>
-        <button id="verify-button">VERIFY</button>
+        <button id="verify-button">VERIFY</button>-->
       </div>
       <div id="payment-net-banking">
-        <div>
+        <!--<div>
           <img src="https://images.bewakoof.com/web/icici-1556185960.png" alt="">
           <p>ICICI</p>
           <input type="radio">
@@ -160,7 +167,7 @@
           <p>Kotak</p>
           <input type="radio">
         </div>
-        <p>Other Banks</p>
+        <p>Other Banks</p>-->
       </div>
       
       </div>
@@ -169,15 +176,15 @@
          <p>Cash Collection</p>
         </div>
         <button id="paynow-button">PAY NOW</button>
-       </div>
-       <div id="payment-bnpl">
+      </div>
+      <div id="payment-bnpl">
         <div>
           <img src="https://images.bewakoof.com/web/image-1626434254.png" alt="">
           <p>Simpl</p>
           <input type="radio">
         </div>
         <!--<p>Pay Later with Simpl</p>-->
-       </div>
+      </div>
     </div>
   </div>
   </div>

@@ -1,13 +1,18 @@
 
+userEmail();
+paynow();
+inputvalidate();
+checkinputValidation();
 var paymentDebitButton = document.getElementById("payment-debit-button");
 var paymentWalletButton = document.getElementById("payment-wallet-button");
 var paymentUpiButton = document.getElementById("payment-upi-button");
 var paymentNetBankingButton = document.getElementById("payment-net-banking-button");
 var paymentCodButton = document.getElementById("payment-cod-button");
 var paymentBnplButton = document.getElementById("payment-bnpl-button");
+var FAmount = 2000;
 // We have to change debit card button again on clicking second time;
 
-paymentWalletButton.addEventListener("click", () => {
+/*paymentWalletButton.addEventListener("click", () => {
     // left div changed
     paymentWalletButton.style.backgroundColor = "white";
     paymentWalletButton.style.borderLeft = "5px solid #42a2a2";
@@ -29,7 +34,7 @@ paymentWalletButton.addEventListener("click", () => {
     document.getElementById("payment-net-banking").style.display = "none";
     document.getElementById("payment-cod").style.display = "none";
     document.getElementById("payment-bnpl").style.display = "none";
-});
+});*/
 
 paymentDebitButton.addEventListener("click", () => {
     paymentUpiButton.style.backgroundColor = "whitesmoke";
@@ -52,7 +57,7 @@ paymentDebitButton.addEventListener("click", () => {
     document.getElementById("payment-bnpl").style.display = "none";
 });
 
-paymentUpiButton.addEventListener("click", () => {
+/*paymentUpiButton.addEventListener("click", () => {
     paymentDebitButton.style.backgroundColor = "whitesmoke";
     paymentDebitButton.style.border = "none";
     paymentNetBankingButton.style.backgroundColor = "whitesmoke";
@@ -74,9 +79,9 @@ paymentUpiButton.addEventListener("click", () => {
     document.getElementById("payment-net-banking").style.display = "none";
     document.getElementById("payment-cod").style.display = "none";
     document.getElementById("payment-bnpl").style.display = "none";
-});
+});*/
 
-paymentNetBankingButton.addEventListener("click", () => {
+/*paymentNetBankingButton.addEventListener("click", () => {
     paymentDebitButton.style.backgroundColor = "whitesmoke";
     paymentDebitButton.style.border = "none";
     paymentUpiButton.style.backgroundColor = "whitesmoke";
@@ -97,8 +102,8 @@ paymentNetBankingButton.addEventListener("click", () => {
     document.getElementById("payment-wallet").style.display = "none";
     document.getElementById("payment-cod").style.display = "none";
     document.getElementById("payment-bnpl").style.display = "none";
-});
-paymentCodButton.addEventListener("click",()=>{
+});*/
+/*paymentCodButton.addEventListener("click",()=>{
     paymentDebitButton.style.backgroundColor = "whitesmoke";
     paymentDebitButton.style.border = "none";
     paymentUpiButton.style.backgroundColor = "whitesmoke";
@@ -119,9 +124,9 @@ paymentCodButton.addEventListener("click",()=>{
     document.getElementById("payment-wallet").style.display = "none";
     document.getElementById("payment-cod").style.display = "block";
     document.getElementById("payment-bnpl").style.display = "none";
-})
+})*/
 
-paymentBnplButton.addEventListener("click",()=>{
+/*paymentBnplButton.addEventListener("click",()=>{
     paymentDebitButton.style.backgroundColor = "whitesmoke";
     paymentDebitButton.style.border = "none";
     paymentUpiButton.style.backgroundColor = "whitesmoke";
@@ -142,7 +147,7 @@ paymentBnplButton.addEventListener("click",()=>{
     document.getElementById("payment-wallet").style.display = "none";
     document.getElementById("payment-cod").style.display = "none";
     document.getElementById("payment-bnpl").style.display = "block";
-})
+})*/
 
  
 document.getElementById("paynow-button").addEventListener("click", function () {
@@ -154,9 +159,17 @@ document.getElementById("verify-button").addEventListener("click", function () {
 });
 
 
+function paynow() 
+{
 
+
+
+  inputvalidate();
   document.getElementById("card-pay-now-button").addEventListener("click", function (e) {
     inputvalidate();
+    checkinputValidation();
+    cvvValidation();
+   
     var cardNumberInput = document.getElementById("card-number");
     var cardExpiryInput = document.getElementById("card-expiry");
     var cardCVVInput = document.getElementById("card-password");
@@ -167,6 +180,7 @@ document.getElementById("verify-button").addEventListener("click", function () {
   
     if (cardNumberInput.value === '') {
       alert("Please enter the card number");
+      //checkinputValidation();
       return;
     }
   
@@ -188,12 +202,21 @@ document.getElementById("verify-button").addEventListener("click", function () {
     var person = prompt("Please enter your OTP", "");
   
     if (person == "1234") {
-      alert("We are processing your payment !");
+      alert("We are processing your payment of " + FAmount +"");
+      paymentDone();
       window.location.href = "paymentsuccessful.html";
     } else {
       alert("Wrong OTP, Try Again");
     }
   });
+
+
+
+
+
+}
+
+   
 
 
       
@@ -203,29 +226,10 @@ function inputvalidate()
 {
 
         const debitCardInput = document.getElementById('card-number');
-        const debitExpInput = document.getElementById('card-expiry');
-        const cvvInput = document.getElementById('card-password');
+        
+        //const cvvInput = document.getElementById('card-password')
 
-
-
-        cvvInput.addEventListener('input', function(e) {
-
-            // Remove all non-numeric characters from input
-            const cleanedInput = e.target.value.replace(/\D/g, '');
-          
-            // Limit input to 3 digits
-            const limitedInput = cleanedInput.slice(0, 3);
-          
-            // Update the input value with the limited input
-            e.target.value = limitedInput;
-
-            cardCVVInput = limitedInput;
-          });
-
-
-
-
-        debitExpInput.addEventListener('input', function(e) {
+        /*debitExpInput.addEventListener('input', function(e) {
 
             // Remove all non-numeric characters from input
             const cleanedInput = e.target.value.replace(/\D/g, '');
@@ -240,25 +244,13 @@ function inputvalidate()
             e.target.value = formattedInputep;
 
             cardExpiryInput = formattedInputep;
-          });
+          });*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-     
-      debitCardInput.addEventListener('input', function(e) 
+       debitCardInput.addEventListener('input', function(e) 
       {
 
-     
       //const cleanedInput1 = e.target.value.replace(/[^0-9]/g, '');
             const cleanedInput = e.target.value.replace(/\D/g, '');
 
@@ -273,15 +265,183 @@ function inputvalidate()
             
             e.target.value = trimmedInput;
 
-            cardNameInput = trimmedInput;
+            cardNumberInput = trimmedInput;
       });
 
 }
 
 //validation code for Expire Date 
 
-function expireValidation() {
+function cvvValidation() {
+    const cardcv = document.getElementById('card-password');
+    cardcv.addEventListener('input', function(e) 
+      {
+
+
+                
+     
+      //const cleanedInput1 = e.target.value.replace(/[^0-9]/g, '');
+            const cleanedInput2 = e.target.value.replace(/\D/g, '');
+
+            const limitedInput2 = cleanedInput2.slice(0, 3);
+
+        
+            const formattedInput2 = limitedInput2.replace(/(.{4})/g, '$1 ');
+
+        
+            const trimmedInput2 = formattedInput2.trim();
+
+            
+            e.target.value = trimmedInput2;
+
+            cardCVVInput = trimmedInput2;
+      });
+
 
 }
+
+
+function checkinputValidation() {
+    // get the debit card input field
+const debitCardInput = document.getElementById("card-number");
+
+// add event listener to the input field
+debitCardInput.addEventListener("change", function() {
+  const debitCardNumber = debitCardInput.value;
+
+  // check if debit card number input length is less than or equal to 16
+  if (debitCardNumber.length <= 16 ) {
+    // show pop-up
+    alert("Debit card number should be 16 digits or less.");
+    // reset the value to empty
+    debitCardInput.value = "";
+  }
+});
+
+}
+
+
+var Arr = [];
+var OrderDet = {
+  orderid: 'ADIR73928',
+  IteamName: 'Men shoe',
+  price: FAmount,
+
+};
+
+
+function paymentDone() {
+ 
+
+// Create an array of objects
+// Create an object with ItemName, billingDate, and totalPrice properties
+let myObject = [
+  {
+    itemName: "Product 1",
+    billingDate: "2023-04-21",
+    totalPrice: 10.99,
+  }
+];
+
+
+
+let myArray = [];
+
+var total_item = [
+  {
+
+    //MAN OVERSIZED FIT SECTION STARTS--
+    img:"https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg",
+    merchandise:"Bewakoof®",
+    name: "Men's Purple Beast Within Graphic Printed Oversized0 T-shirt",
+    rating: 4.2,
+    price: 699,
+    mrp: 1499,
+    off:"53%",
+    fit_design: ["OVERSIZED0 FIT"],
+    color :["purple"],
+    size: ['s','m','l','xl','2xl','3xl'],
+    gender: "male",
+    category: "T-shirt",
+    bestseller: false,
+    newarrive: false,
+    buy3at999: true,
+  },
+  {
+    img:"https://images.bewakoof.com/t640/men-s-blue-bones-graphic-printed-oversized-t-shirt-589386-1681726048-1.jpg",
+    merchandise:"OFFICIAL DC COMICS MERCHANDISE",
+    name: "Men's Blue Bones Graphic Printed Oversized T-shirt",
+    rating: 4.2,
+    price: 699,
+    mrp: 1499,
+    off:"53%",
+    fit_design:["OVERSIZED FIT"] ,
+    color :["blue"],
+    size: ['s','m','l','xl','2xl','3xl'],
+    gender: "male",
+    category: "T-shirt",
+    bestseller: false,
+    newarrive: false,
+    buy3at999: false,
+  },
+  {
+    img:"https://images.bewakoof.com/t640/men-s-green-the-man-of-steel-graphic-printed-oversized-t-shirt-589395-1681725064-1.jpg",
+    merchandise:"OFFICIAL DC COMICS MERCHANDISE",
+    name: "Men's Green The Man Of Steel Graphic Printed Oversized T-shirt",
+    rating: 4.2,
+    price: 699,
+    mrp: 1499,
+    off:"53%",
+    fit_design:["OVERSIZED FIT","DESIGN OF THE WEEK","100% COTTON"] ,
+    color:["green"],
+    size: ['s','m','l','xl','2xl','3xl'],
+    gender: "male",
+    category: "T-shirt",
+    bestseller: false,
+    newarrive: false,
+    buy3at999: false,
+  },
+];
+
+
+// Create an array and add the object to it
+
+myArray.push(myObject);
+
+// Store the array of objects in localStorage
+localStorage.setItem("myData", JSON.stringify(myArray));
+
+// Retrieve the data from localStorage and parse it back into an array of objects
+let retrievedData = JSON.parse(localStorage.getItem("myData"));
+
+// Log the retrieved data to the console
+console.log(retrievedData);
+
+
+
+}
+
+function userEmail() {
+
+  //let userArr = JSON.parse(localStorage.getItem("userData")) || [];
+  //var uemail = document.getElementById("payment-navbar-email").userArr.userEmail;
+
+  let userArr = JSON.parse(localStorage.getItem("userData")) || [];
+  //let uemail = userArr[0].userEmail;
+  let uemail = userArr[0].userEmail;
+  document.getElementById("payment-navbar-email").innerHTML = uemail;
+  
+
+  let userObj = {
+   
+    userEmail: "Sweta@gmail.com"
+    
+  }
+
+  userArr.push(userObj);
+  localStorage.setItem("userData", JSON.stringify(userArr));
+
+}
+
       
   
