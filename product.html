@@ -4,11 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product page</title>
+    <style>
+        #parent {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        }
+       #parent>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 30px;
+            padding:10px;
+        }
+        img{
+          border-radius: 30px;
+        }
+        button{
+          width:100%;
+          border:none;
+          background-color:plum;
+          color: purple;
+          padding:10px 0;
+          
+          border-radius: 30px;
+        }
+        button:hover {
+          background-color: black;
+
+        }
+        #parent > div >div{
+         display: flex;
+         justify-content: center;
+        gap: 30px;
+        }
+        div > p:first-child {
+            text-decoration: line-through;
+       }
+   </style>
 </head>
 <body>
-    <h1>
-        my name is nitish
-    </h1>
+    <div id="parent"></div>
+      
 </body>
 </html>
+<script>
+    var product = [
+    {
+     id:1,
+     name:"black tshirt",
+     image_url:"https://media.istockphoto.com/id/1142212002/photo/front-of-men-cut-black-t-shirt-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=VZARRRO1PwMYKV9cHquulb69QwbxSEFA5S76-axY27c=",
+     MRP:799,
+     price:179,
+    },
+    {
+      id:2,
+      name:"green tshirt",
+     image_url:"https://media.istockphoto.com/id/922855190/photo/green-shortsleeve-cotton-tshirt-on-a-mannequin-isolated.jpg?b=1&s=170667a&w=0&k=20&c=Ahusn0sv-yTNbLKCRhmqm3VmP2LNm4Gm3HNz9UzMIlY=",
+     MRP:899,
+     price:170,
+    },
+    {
+      id:3,
+      name:"purple tshirt",
+     image_url:"https://media.istockphoto.com/id/1354823135/photo/violet-t-shirt-template-men-isolated-on-white-tee-shirt-blank-as-design-mockup-front-view.jpg?s=612x612&w=0&k=20&c=dX1TzAmOTLkop_woCseR2jysOBzgqWVupfLx3RTlfks=",
+     MRP:999,
+     price:150,
+    },
+    {
+      id:4,
+      name:"black tshirt",
+     image_url:"https://media.istockphoto.com/id/1142212002/photo/front-of-men-cut-black-t-shirt-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=VZARRRO1PwMYKV9cHquulb69QwbxSEFA5S76-axY27c=",
+     MRP:799,
+     price:179,
+    },
+    {
+      id:5,
+      name:"green tshirt",
+     image_url:"https://media.istockphoto.com/id/922855190/photo/green-shortsleeve-cotton-tshirt-on-a-mannequin-isolated.jpg?b=1&s=170667a&w=0&k=20&c=Ahusn0sv-yTNbLKCRhmqm3VmP2LNm4Gm3HNz9UzMIlY=",
+     MRP:899,
+     price:170,
+    },
+    {
+      id:6,
+      name:"purple tshirt",
+     image_url:"https://media.istockphoto.com/id/1354823135/photo/violet-t-shirt-template-men-isolated-on-white-tee-shirt-blank-as-design-mockup-front-view.jpg?s=612x612&w=0&k=20&c=dX1TzAmOTLkop_woCseR2jysOBzgqWVupfLx3RTlfks=",
+     MRP:999,
+     price:150,
+    },
+    {
+      id:7,
+      name:"black tshirt",
+     image_url:"https://media.istockphoto.com/id/1142212002/photo/front-of-men-cut-black-t-shirt-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=VZARRRO1PwMYKV9cHquulb69QwbxSEFA5S76-axY27c=",
+     MRP:799,
+     price:179,
+    },
+    {
+      id:8,
+      name:"green tshirt",
+     image_url:"https://media.istockphoto.com/id/922855190/photo/green-shortsleeve-cotton-tshirt-on-a-mannequin-isolated.jpg?b=1&s=170667a&w=0&k=20&c=Ahusn0sv-yTNbLKCRhmqm3VmP2LNm4Gm3HNz9UzMIlY=",
+     MRP:899,
+     price:170,
+    },
+    {
+      id:9,
+      name:"purple tshirt",
+     image_url:"https://media.istockphoto.com/id/1354823135/photo/violet-t-shirt-template-men-isolated-on-white-tee-shirt-blank-as-design-mockup-front-view.jpg?s=612x612&w=0&k=20&c=dX1TzAmOTLkop_woCseR2jysOBzgqWVupfLx3RTlfks=",
+     MRP:999,
+     price:150,
+    },
+  ];
+product.map(function(elem){
+    var div=document.createElement("div");
+    var image=document.createElement("img");
+    image.setAttribute("src",elem.image_url);
+    image.setAttribute("alt",elem.name);
+   
+
+    var name=document.createElement("h4");
+    name.textContent=elem.name;
+
+    var pricebox=document.createElement("div")
+
+    var MRP=document.createElement("p");
+    MRP.textContent=elem.MRP;
+    
+    var price=document.createElement("p");
+    price.textContent=elem.price;
+
+    pricebox.append(MRP,price);
+   
+    var btn=document.createElement("button");
+    btn.textContent="Add to cart";
+
+    btn.addEventListener("click",function(){
+      addToCart(elem);
+    })
+
+    div.append(image,name,pricebox,btn);
+
+    document.getElementById("parent").append(div);
+    
+  
+
+});
+var cartArr=JSON.parse(localStorage.getItem("cartItem"))||[];
+function addToCart(product){
+  console.log(product);
+  cartArr.push(product);
+  localStorage.setItem("cartItem",JSON.stringify(cartArr));
+      
+}
+</script>
