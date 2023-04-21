@@ -1,5 +1,5 @@
 
-let product = JSON.parse(localStorage.getItem("single_prod"));
+let product = JSON.parse(localStorage.getItem("single_prod"))||[];
 console.log(product);
 
 var link = product[0].img;
@@ -29,6 +29,18 @@ for(let i=0;i<product[0].fit_design.length;i++)
     document.querySelector(".type").append(fit_box)
     
 }
+
+//added "addtocat" item in add_to_bag localstorage
+var cart_arr = JSON.parse(localStorage.getItem("cart_item"))||[]
+document.getElementById("add_to_bag").addEventListener("click",addtocart)
+function addtocart()
+{
+    cart_arr.push(product[0])
+
+     localStorage.setItem("cart_item",JSON.stringify(cart_arr))
+}
+
+
 
 
 
