@@ -3102,8 +3102,6 @@ function reload()
 {
   window.location.reload()
 }
-
-   
   
     function display(total_item) {
         document.getElementById("parent").textContent = ""
@@ -3117,49 +3115,63 @@ function reload()
             img.setAttribute("src", ele.img)
             img.setAttribute("id", "pro_img")
 
-
             var discribe = document.createElement("div");
             discribe.setAttribute("id", "discribe")
 
             var merchandise = ele.merchandise;
-            var p = document.createElement("p")
-            p.setAttribute("id", "brand")
-
+            var merchant_div = document.createElement("div")
+            merchant_div.append(merchandise)
+            
             var name = ele.name
-            var p = document.createElement("p")
-            p.setAttribute("id", "name")
-
-            var price = ele.price
-            var p = document.createElement("p")
-            p.setAttribute("id", "price")
-
+            var name_div = document.createElement("div")
+            name_div.append(name)
+            
+           
+           var price = "₹"+Number(ele.price);
+            var price_div = document.createElement("div")
+            price_div.append(price)
+            price_div.setAttribute("id","uprice")
+            
+                        
             var mrp = ele.mrp;
-            var p = document.createElement("p")
-            p.setAttribute("id", "mrp")
+            var mrp_div = document.createElement("div")
+            mrp_div.setAttribute("id","unique")
+            mrp_div.append(mrp)
+            
+      
+            var tribe_off = Number(price) - 50;
+            var tribe_div = document.createElement("div")
+            tribe_div.append(tribe_off)
+           
 
-            var tribe_off = price - 50;
-            var p = document.createElement("p")
-            p.setAttribute("id", "tribe_off")
-
-            // var button = document.createElement("button")
-            // button.textContent = "Add to Cart"
-            // button.addEventListener("click", function () {
-            //     addtocart(ele)
-            // })
-
-            discribe.append(merchandise, name, price, mrp, tribe_off);
+            discribe.append(merchant_div, name_div, price_div, mrp_div);
             div.append(img, discribe);
 
+            
+
             document.getElementById("parent").append(div);
+
+            div.addEventListener("click",function()
+            {
+              
+              singlepro(ele)
+            })
 
         })
 
     }
 
+    var single_product = []
+    function singlepro(i)
+    {
+      single_product.push(i)
+       localStorage.setItem("single_prod",JSON.stringify(single_product))
+      window.location.href = "http://127.0.0.1:5502/Bewakoof/chirag(cart&product)/complete_product_page/singel_product/single_product.html";
+    }
 
     //console.log(arr)
-    var added = JSON.parse(localStorage.getItem("array")) || [];
-    function addtocart(i) {
-        added.push(i)
-        localStorage.setItem("array", JSON.stringify(added))
-    }
+    // var added = JSON.parse(localStorage.getItem("array")) || [];
+    // function addtocart(i) {
+    //     added.push(i)
+    //     localStorage.setItem("array", JSON.stringify(added))
+    // }
