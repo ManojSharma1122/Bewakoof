@@ -17,6 +17,9 @@
         align-items: center;
         background-color:rgb(238, 238, 238);
         justify-content: space-around;
+        font-family: sans-serif;
+        font-size: 10px;
+       
       
     }#nav_bar_top_left>li
     {
@@ -24,6 +27,7 @@
         list-style-type: none;
         margin:4px 20px;
         align-items: center;
+        
        
         
     
@@ -60,7 +64,9 @@
     }#logo_menu>li>a{
         text-decoration: none;
         color: #333;
-        font-size: 16px;
+        font-size: 13px;
+        font-family: sans-serif;
+
     }#logo_menu>li>a>img{
         width: 150px;
         
@@ -69,7 +75,10 @@
     {
         display: flex;
         align-items: center;
-    }#nav_search_bar>li{
+
+    }
+    
+    #nav_search_bar>li{
         list-style-type: none;
         color: #333;
         margin: 10px;
@@ -79,25 +88,29 @@
     {
         text-decoration: none;
         color: #333;
-        font-size: 20px;
+        font-size: 14px;
+        font-family: sans-serif;
       
     }
     
     #nav_search_bar>li>input
     {
-        width: 320px;
+        width: 250px;
         
         background-color:rgb(238, 238, 238);
-        border-radius: 2px;
-        font-size: 14px;
+        border-radius: 8px;
+        font-size: 10px;
         padding: 10px;
     
     border: none;
-    }#nav_search_bar>li>input:hover
+    }
+    #nav_search_bar>li>input:hover
     {
     background-color: transparent;
-    border: .5px solid #333;
+    border: .1px solid #333;
+    border-radius: 8px;
     }
+   
     
     #nav_bar_manu
     {
@@ -118,6 +131,7 @@
         text-decoration: none;
         color: #333;
         padding: 2px;
+
     }#nav_bar_manu>li>a:hover
     {
         font-weight: 600;
@@ -153,15 +167,23 @@
        visibility: hidden;
        font-size: 13px;
        font-family: Sans-serif;
+       font-weight: lighter;
+       font-weight: 550;
+       height: 500px;
+       width: 700px;
+       overflow: auto;
+       
        
       
     }
     #sub_menu_item li + li{
         font-size: 11px;
-        font-family: Sans-serif;
-        font-weight: lighter;
+        font-family:sans-serif ;
+        font-weight: 400;
+        clear: #2d2d2d;
 
     }  
+ 
     
 
     #sub_menu_item>ul{
@@ -212,8 +234,23 @@
         width:35px;
     }
     
-    hr {
-        color: black;
+    hr{
+       
+    border-color: #000;  
+    border-bottom-width: .0cm;
+    /* border-width: ; */
+
     }
+    #Spacal img{
+        width: 25%;
+        margin-top:  5px;
+        margin-bottom:  5px;
+
+    }
+    #flag img {
+        width: 20%;
+        margin-left:10px ;
+    }
+ 
 
     
