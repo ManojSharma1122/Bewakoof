@@ -46,38 +46,29 @@ function display() {
     frag.appendChild(select);
     // console.log(document.getElementById("quant"))
 
+    var del = document.createElement("button");
+    del.textContent = "Remove";
+    del.addEventListener("click",function()
+    {
+      delete_item(ele)
+    })
+
+
+
     var discribe = document.createElement("div");
     discribe.setAttribute("id", "discribe");
-    discribe.append(name, price_box, save, frag);
+    discribe.append(name, price_box, save, frag,del);
 
     var par = document.createElement("div");
     par.setAttribute("id", "par");
     par.append(discribe, img_div);
 
-    document.querySelector(".bottom").append(par);
-
-    var price = document.createElement("h3");
-    price.textContent = ele.price;
-
-    var del = document.createElement("button");
-    del.textContent = "Delete";
-    // del.addEventListener("click",function()
-    // {
-    //     deleted(ele)
-    // })
-    // var div = document.createElement("div")
-    // div.append(img,name,price,del)
-    // document.getElementById("parent").append(div)
+    document.querySelector(".bottom").append(par); 
   });
 }
 
-console.log(document.querySelector("select").value)
-// for(let i=0;i<getarr.length;i++)
-// {
-//     // var img = document.createElement("img")
-//     //     img.setAttribute("src",getarr[i][i].img)
+console.log(getarr)
 
-// }
 
 var total = getarr.reduce(function (acc, curr) {
   return acc + curr.price;
@@ -89,8 +80,11 @@ var item = document.createElement("h1");
 item.textContent = getarr.length + " ITEM(s)";
 document.getElementById("item_count").append(item);
 
-function deleted(i) {
-  var rem = getarr.splice(i, 1);
-  localStorage.setItem("array", JSON.stringify(getarr));
-  location.reload();
+
+
+
+function  delete_item(i)
+{
+    var modify = getarr.splice(i,1) 
+    location.reload()
 }

@@ -3166,7 +3166,7 @@ function reload()
     {
       single_product.push(i)
        localStorage.setItem("single_prod",JSON.stringify(single_product))
-      window.location.href = "http://127.0.0.1:5502/Bewakoof/chirag(cart&product)/complete_product_page/singel_product/single_product.html";
+      window.location.href = "single_product.html";
     }
 
     //console.log(arr)
