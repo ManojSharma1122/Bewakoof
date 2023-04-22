@@ -6,7 +6,10 @@ body
 {
     font-family: 'Montserrat', sans-serif;
 }
-
+#merchant_div
+{
+    font-weight: 600;
+}
 #parent {
     display: grid;
     grid-template-columns: auto auto auto;

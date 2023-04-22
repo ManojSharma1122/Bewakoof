@@ -55,6 +55,7 @@
             border-radius: 5px;
             width: 58%;
             background-color: #FCFFEE;
+            padding: 15px;
 
         }
 
@@ -78,7 +79,7 @@
            
             width: 118%;
             height: 90%;
-            display: grid;  
+            
             
             
         }
@@ -169,15 +170,25 @@
            border-radius: 5px;
        
         }
+        #remove_btn
+        {
+            margin-left: 5%;
+            width: 70%;
+            height: auto;
+            background-color: #fff;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid rgb(219, 214, 214);
+        }
         #par
         {
             display: flex;
-           
             justify-content: space-between;
-            height: 80%;
+            height: auto;
             border: solid rgb(219, 214, 214);
             border-width: thin;
             border-radius: 5px;
+            margin-bottom: 2%;
            
            
            
@@ -226,9 +237,9 @@
             </b>
         </div>
         <div id="yello3">
-            <div class="pos3" id="child1">
-               
-            </div>
+           
+               <p class="pos3" id="child1"></p>
+            
             <div class="pos3" id="child2">
                 <p style="text-align: start;color: #333333;">Save extra
                 <div id="save_extra"></div>
@@ -259,15 +270,15 @@
                         <tbody>
                             <tr>
                                 <td>Total MRP (Incl. of taxes)</td>
-                                <td></td>
+                                <td id="totalmrp"></td>
                             </tr>
                             <tr>
                                 <td>Shipping Charges </td>
-                                <td></td>
+                                <td id="ship"></td>
                             </tr>
                             <tr>
                                 <td>Bag Discount</td>
-                                <td></td>
+                                <td id="discount"></td>
                             </tr>
                             <tr>
                                 <td><b>Subtotal</b></td>

@@ -122,7 +122,7 @@
         font-weight: 600;
         color: black;
     }hr{
-         border: .2px solid rgb(231, 208, 208);;
+         border: .2px solid rgb(9, 8, 8);;
     }#nav_bar_manu>li:hover
     {
     border-bottom: 4px solid rgb(253, 216, 53);
@@ -212,5 +212,5 @@
     }
     
     hr {
-        color: black;
+        color: rgb(7, 7, 7);
     }

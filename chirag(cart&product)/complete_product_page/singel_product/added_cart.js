@@ -1,6 +1,19 @@
 var getarr = JSON.parse(localStorage.getItem("cart_item")) || [];
+if(getarr.length==0)
+{
+  window.location.href = "Empty_cart.html"
+}
 
-console.log(document.querySelector(".bottom"));
+
+
+function  delete_item(i)
+{
+  var rem = getarr.splice(i,1)
+  localStorage.setItem("cart_item",JSON.stringify(getarr))
+   location.reload()
+}
+
+
 
 display();
 
@@ -47,6 +60,7 @@ function display() {
     // console.log(document.getElementById("quant"))
 
     var del = document.createElement("button");
+    del.setAttribute("id","remove_btn")
     del.textContent = "Remove";
     del.addEventListener("click",function()
     {
@@ -67,11 +81,17 @@ function display() {
   });
 }
 
-console.log(getarr)
+
+
+
+
+
 
 
 var total = getarr.reduce(function (acc, curr) {
   return acc + curr.price;
+  
+
 }, 0);
 var t = document.getElementById("total");
 t.textContent = "Total" + "   " + total;
@@ -83,8 +103,32 @@ document.getElementById("item_count").append(item);
 
 
 
-function  delete_item(i)
+
+
+var totalmrp = getarr.reduce(function (acc, curr) {
+  return acc + curr.mrp;
+}, 0);
+var m = document.getElementById("totalmrp");
+m.textContent = totalmrp;
+
+
+if(totalmrp>1500)
 {
-    var modify = getarr.splice(i,1) 
-    location.reload()
+  var shipcharge = document.getElementById("ship")
+  shipcharge.textContent = "Free"
+  document.querySelector(".pos3").textContent = "Yay! You get FREE delivery on this order"
 }
+else
+{
+  var shipcharge = document.getElementById("ship")
+  shipcharge.textContent =  " +"+50
+  document.querySelector(".pos3").textContent = "Shop for ₹100 more to get FREE delivery!"
+}
+
+
+var discount  = document.getElementById("discount")
+
+discount.textContent =  totalmrp-total
+discount.style.color = "red"
+
+console.log(getarr)
