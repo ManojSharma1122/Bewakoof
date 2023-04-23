@@ -1,15 +1,19 @@
 
 userEmail();
+
 paynow();
 inputvalidate();
 checkinputValidation();
+cvvValidation();
+calculateTotal();
 var paymentDebitButton = document.getElementById("payment-debit-button");
 var paymentWalletButton = document.getElementById("payment-wallet-button");
 var paymentUpiButton = document.getElementById("payment-upi-button");
 var paymentNetBankingButton = document.getElementById("payment-net-banking-button");
 var paymentCodButton = document.getElementById("payment-cod-button");
 var paymentBnplButton = document.getElementById("payment-bnpl-button");
-var FAmount = 2000;
+
+
 // We have to change debit card button again on clicking second time;
 
 /*paymentWalletButton.addEventListener("click", () => {
@@ -159,6 +163,27 @@ document.getElementById("verify-button").addEventListener("click", function () {
 });
 
 
+
+var FAmount = 0;
+function calculateTotal() {
+  var getarr = JSON.parse(localStorage.getItem("cart_item")) || [];
+  var total = 0;
+ 
+
+  for (var i = 0; i < getarr.length; i++) {
+    for (var j = 0; j < getarr[i].length; j++) {
+      total += getarr[i][j].price;
+    }
+  }
+
+  FAmount = total; // Set FAmount to total inside the function
+
+  console.log(total);
+}
+
+
+
+
 function paynow() 
 {
 
@@ -174,6 +199,16 @@ function paynow()
     var cardExpiryInput = document.getElementById("card-expiry");
     var cardCVVInput = document.getElementById("card-password");
     var cardNameInput = document.getElementById("card-name");
+
+    const cartItemStr = localStorage.getItem("cart_item");
+    const cartItem = JSON.parse(cartItemStr);
+
+    let totalPrice = 0;
+    for (let i = 0; i < cartItem.length; i++) {
+      totalPrice += cartItem[i].price;
+    }
+
+    console.log(totalPrice);
 
 
 
@@ -202,7 +237,7 @@ function paynow()
     var person = prompt("Please enter your OTP", "");
   
     if (person == "1234") {
-      alert("We are processing your payment of " + FAmount +"");
+      alert("We are processing your payment of ₹"+ totalPrice  +"");
       paymentDone();
       window.location.href = "paymentsuccessful.html";
     } else {
@@ -329,17 +364,81 @@ var OrderDet = {
 
 };
 
+// date code getting the date from the system
+
+ // Call the function to calculate the total and set FAmount
+
+
+
+
+
+
 
 function paymentDone() {
- 
+
+/*var currentDate = new Date();
+
+var year = currentDate.getFullYear();
+var month = currentDate.getMonth() + 1; 
+var day = currentDate.getDate();
+var dateString = year + "-" + month + "-" + day;
+console.log(dateString);
+
+  let cartData = [
+    {
+      price: 699,
+      date: dateString,
+    },
+    {
+        price: 699,
+        date: dateString,
+    },
+    {
+      price: 699,
+      date: dateString,
+    }
+    
+  ];
+
+  let carArr = [];
+
+  carArr.push(cartData);
+
+  localStorage.setItem("cart_item",JSON.stringify(carArr));*/
+
+
+
+      /*var getarr = JSON.parse(localStorage.getItem("cart_item")) || [];
+    var total = 0;
+
+    for (var i = 0; i < getarr.length; i++) {
+      for (var j = 0; j < getarr[i].length; j++) {
+        total += getarr[i][j].price;
+      }
+    }
+
+    console.log(total);
+
+  
+    FAmount = total;
+  //console.log(p);     */ 
+
+
+
+
 
 // Create an array of objects
 // Create an object with ItemName, billingDate, and totalPrice properties
 let myObject = [
   {
-    itemName: "Product 1",
+    itemName: "Product 2",
     billingDate: "2023-04-21",
     totalPrice: 10.99,
+  },
+  {
+    itemName: "Product 1",
+    billingDate: "2023-04-22",
+    totalPrice: 30.99,
   }
 ];
 
@@ -428,8 +527,12 @@ function userEmail() {
 
   let userArr = JSON.parse(localStorage.getItem("userData")) || [];
   //let uemail = userArr[0].userEmail;
-  let uemail = userArr[0].userEmail;
-  document.getElementById("payment-navbar-email").innerHTML = uemail;
+
+  if (userArr.length > 0) {
+    let uemail = userArr[0].userEmail;
+    document.getElementById("payment-navbar-email").innerHTML = uemail;
+  }
+  
   
 
   let userObj = {
@@ -440,6 +543,11 @@ function userEmail() {
 
   userArr.push(userObj);
   localStorage.setItem("userData", JSON.stringify(userArr));
+
+
+  function cartData() {
+
+  }
 
 }
 
