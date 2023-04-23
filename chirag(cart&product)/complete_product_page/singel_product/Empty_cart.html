@@ -102,7 +102,7 @@
         <div id="bookimg"><img src="https://images.bewakoof.com/images/doodles/empty-cart-page-doodle.png" alt=""
                 style="width: 150px ;height: 50%;"></div>
         <h2 id="nobag">Nothing in the bag</h2>
-        <a class="success" href="Home.html"
+        <a class="success" href="index.html"
             style="padding: 10px; border: 2px solid; border-radius: 5px; display: inline-block; margin-top: 15px;">Continue
             Shopping</a>
     </div>
@@ -111,38 +111,44 @@
     <table id="table">
         <tr>
             <th>Men</th>
-            <td><a href="">Topwear</a></td>
-            <td><a href="">Bottomwear</a></td>
+            <td><a href="product_page.html">Topwear</a></td>
+            <td><a href="product_page.html">Bottomwear</a></td>
         </tr>
 
         <tr>
             <td></td>
-            <td><a href="">Footwear</a></td>
-            <td><a href="">Bottomwear</a></td>
+            <td><a href="product_page.html">Footwear</a></td>
+            <td><a href="product_page.html">Bottomwear</a></td>
         </tr>
 
 
 
         <tr>
             <th>Women</th>
-            <td><a href="">Topwear</a></td>
-            <td><a href="">Footwear</a></td>
+            <td><a href="product_page.html">Topwear</a></td>
+            <td><a href="product_page.html">Footwear</a></td>
         </tr>
 
         <tr>
             <td></td>
-            <td><a href="">Bottomwear</a></td>
+            <td><a href="product_page.html">Bottomwear</a></td>
         </tr>
 
 
 
         <tr>
             <th>Mobile Covers</th>
-            <td><a href="">All Mobile Covers</a></td>
+            <td><a href="product_page.html">All Mobile Covers</a></td>
         </tr>
     </table>
     <img id="cardlogo" src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
 
 </body>
-
+<script>
+    document.getElementById("logo").addEventListener("click",tohome)
+    function tohome()
+    {
+        window.location.href = "index.html"
+    }
+</script>
 </html>

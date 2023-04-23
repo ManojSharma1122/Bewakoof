@@ -327,15 +327,21 @@ body {
   }
 
   .kida {
-    width: 100%;
+    width: auto;
+    height: 90%;
     margin: auto;
-    /* border: 1px solid black; */
+    
     padding-left: 0px;
     display: block;
   }
+  img
+  {
+    width: 100%;
+    height: 100%;
+  }
 
   .bewalogo {
-    width: 100%;
+    width: 10%;
   }
 
   .kidb {

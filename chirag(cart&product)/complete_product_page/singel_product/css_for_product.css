@@ -112,41 +112,30 @@ select {
 }
 
 
-@media screen and (max-width: 900px) and (min-width: 742px) {
+
+
+  @media screen and (max-device-width: 480px){
     #parent {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
-    }
-    ul
-    {
-        width: 50%;
-        height: 50%;
-    }
-    .dropdowns_box {
-
-        width: 40%;
-        margin-right: 1%;
-        margin-left: 15%;
-        height: auto;
-        
-    }
-    
-  }
-  @media screen and (max-width: 742px) and (min-width: 300px) {
-    #parent {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        justify-content: center;
        
     }
+    
+    #nav_bar_container
+    {
+        display: none;
+    }
+
     .dropdowns_box {
 
-        width: 40%;
-        margin-right: 1%;
-        margin-left: 15%;
-        height: auto;
+       display: none;
         
+    }
+    .sub_item
+    {
+        
+        width: 105%;
     }
     
   }
