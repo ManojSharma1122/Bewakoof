@@ -14,7 +14,6 @@ function  delete_item(i)
 }
 
 
-
 display();
 
 function display() {
@@ -132,3 +131,10 @@ discount.textContent =  totalmrp-total
 discount.style.color = "red"
 
 console.log(getarr)
+console.log(document.getElementById("quant").value)
+// var p = 0;
+// for(let i=0;i<getarr.length;i++)
+// {
+//  p += getarr[i].price;
+// }
+// console.log(p)

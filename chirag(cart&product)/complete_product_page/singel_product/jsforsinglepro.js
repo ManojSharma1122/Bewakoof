@@ -9,16 +9,19 @@ var image_div = document.querySelector(".img")
 image_div.append(image)
 
 var brnd_name = product[0].merchandise;
-document.querySelector("h2").append(brnd_name)
+document.getElementById("uniqb").append(brnd_name)
 
 var names = product[0].name
-document.querySelector("p").append(names)
+document.getElementById("uniqn").append(names)
 
 var price = product[0].price
 document.querySelector("h4").append(price)
 
 var mrp = product[0].mrp
-var mrps = document.querySelector("h4").append(mrp)
+var max_div = document.createElement("div")
+max_div.style.textDecoration = "line-through"
+max_div.append(mrp)
+var mrps = document.querySelector("h4").append(max_div)
 
 
 
@@ -41,7 +44,7 @@ function addtocart()
      window.location.reload();
 }
 
-//window.location(reload)
+
 if(cart_arr.length==0)
 {
    
@@ -56,17 +59,3 @@ else
     link.setAttribute("href","added_cart.html")
     
 }
-
-
-
-// var link = document.getElementById("linktocart")
-// var checkcart = localStorage.getItem("getarr")
-// if(cart_arr.length>0)
-// {
-//     link.setAttribute("href","http://127.0.0.1:5502/Bewakoof/chirag(cart&product)/added_cart.html")
-// }
-// else
-// {
-//     link.setAttribute("http://127.0.0.1:5502/Bewakoof/chirag(cart&product)/Empty_cart.html")
-// }
-// console.log(checkcart.length)
