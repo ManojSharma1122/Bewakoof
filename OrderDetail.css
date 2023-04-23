@@ -1,0 +1,34 @@
+.order-details {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .order-details p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .order-details .order-id {
+    font-weight: bold;
+  }
+  
+  .order-details .total-price {
+    color: green;
+    font-weight: bold;
+  }
+
+  #parent {
+    width: 500px;
+    margin-left: 450px;
+  }
+
+  p {
+    margin-left: 300px;
+  }
+
+  img {
+    margin-left: 190px;
+  }
