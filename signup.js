@@ -86,3 +86,5 @@ function userSign(event) {
 }
 
 document.querySelector("form").addEventListener("submit", userSign);
+
+window.location.href = 'index.html';
