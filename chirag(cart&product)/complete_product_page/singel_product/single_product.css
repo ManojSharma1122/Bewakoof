@@ -349,6 +349,7 @@ body {
   .size {
     width: 100%;
     display: flex;
+    margin-left: 40%;
    
   }
 
