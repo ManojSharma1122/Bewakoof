@@ -82,9 +82,10 @@ function userSign(event) {
 
 
   alert("You have successfully signed up");
-  window.location.href = "signup.html";
+  window.location.href = "index.html";
+
 }
 
 document.querySelector("form").addEventListener("submit", userSign);
 
-window.location.href = 'index.html';
+
