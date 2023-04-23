@@ -190,17 +190,7 @@ input {
     }
 }
 
-/* #body3 div {
-    width: 12.5%;
-    text-align: center;
-}
 
-
-#body3 img {
-    width: 90%;
-    display: block;
-    margin: auto;
-} */
 
 #body3 p {
     width: 85%;
@@ -223,21 +213,23 @@ input {
 }
 
 .design img {
-    width: 90%;
+    width: 100%;
     margin: auto;
+
+
 }
 
 @media only screen and (min-width:421px) and (max-width:720px) {
     .design {
 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media only screen and (min-width:0px) and (max-width:420px) {
     .design {
 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -401,7 +393,7 @@ input {
 
 .grid8 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
@@ -462,12 +454,11 @@ input {
 }
 
 .footer a:hover {
-    color: aqua;
+    color: green;
 }
 
 @media only screen and (min-width:421px) and (max-width:720px) {
     .footer {
-        /* background-color: black; */
         grid-template-columns: repeat(2, 1fr);
     }
 }
