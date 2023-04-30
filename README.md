@@ -37,11 +37,6 @@ As simple as you sign in to other website if you already sign in then no need to
  ## Product detail page
  If you want to know more about or want to purchase a product you just have to click on it and you will encounter with the detail page which looks like this :-
  
- ##Contributed by :-
-- Chirag Ajmera
-- Manoj Sharma
-- 
- 
 
 ![Screenshot 2023-04-30 122051](https://user-images.githubusercontent.com/121008037/235339890-8f81bac7-ab13-481c-91e2-fc15616c9357.png)
 
