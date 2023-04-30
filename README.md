@@ -60,3 +60,10 @@ After you click on proceed to payment on cart page you will see a payment gatewa
 After completing the payment process it will show you your unique order id and will redirect you to home page
 
 ![Screenshot 2023-04-30 122422](https://user-images.githubusercontent.com/121008037/235340023-9849e598-9b51-4d2f-9c5a-5b63bcc40e8e.png)
+## 🚀Contributed by :- 
+🧑‍🦱 Chirag Ajmera
+🧑‍ Manoj Sharma
+👧 Sweta Kumari
+🧑‍🦱 Indrajeet gupta
+🧑‍🦱Chaitanya Khairnar
+🧑‍🦱 Nitish Kumar
